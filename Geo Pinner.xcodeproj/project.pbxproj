@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		53095B67295F20FA0092FDFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095B66295F20FA0092FDFA /* AppDelegate.swift */; };
 		53095B69295F20FA0092FDFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095B68295F20FA0092FDFA /* SceneDelegate.swift */; };
-		53095B6B295F20FA0092FDFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53095B6A295F20FA0092FDFA /* ViewController.swift */; };
-		53095B6E295F20FA0092FDFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53095B6C295F20FA0092FDFA /* Main.storyboard */; };
 		53095B70295F21020092FDFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53095B6F295F21020092FDFA /* Assets.xcassets */; };
 		53095B73295F21020092FDFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53095B71295F21020092FDFA /* LaunchScreen.storyboard */; };
+		53DE5994295F523F00DE0B6A /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE598D295F523F00DE0B6A /* MapPresenter.swift */; };
+		53DE5995295F523F00DE0B6A /* MapLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE598E295F523F00DE0B6A /* MapLocalDataManager.swift */; };
+		53DE5996295F523F00DE0B6A /* MapProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE598F295F523F00DE0B6A /* MapProtocols.swift */; };
+		53DE5997295F523F00DE0B6A /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE5990295F523F00DE0B6A /* MapInteractor.swift */; };
+		53DE5998295F523F00DE0B6A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE5991295F523F00DE0B6A /* MapView.swift */; };
+		53DE5999295F523F00DE0B6A /* MapRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE5992295F523F00DE0B6A /* MapRemoteDataManager.swift */; };
+		53DE599A295F523F00DE0B6A /* MapWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE5993295F523F00DE0B6A /* MapWireFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53095B63295F20F90092FDFA /* Geo Pinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geo Pinner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53095B66295F20FA0092FDFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53095B68295F20FA0092FDFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53095B6A295F20FA0092FDFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		53095B6D295F20FA0092FDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53095B6F295F21020092FDFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53095B72295F21020092FDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53095B74295F21020092FDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53DE598D295F523F00DE0B6A /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		53DE598E295F523F00DE0B6A /* MapLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLocalDataManager.swift; sourceTree = "<group>"; };
+		53DE598F295F523F00DE0B6A /* MapProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProtocols.swift; sourceTree = "<group>"; };
+		53DE5990295F523F00DE0B6A /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		53DE5991295F523F00DE0B6A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		53DE5992295F523F00DE0B6A /* MapRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRemoteDataManager.swift; sourceTree = "<group>"; };
+		53DE5993295F523F00DE0B6A /* MapWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWireFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,26 @@
 			children = (
 				53095B66295F20FA0092FDFA /* AppDelegate.swift */,
 				53095B68295F20FA0092FDFA /* SceneDelegate.swift */,
-				53095B6A295F20FA0092FDFA /* ViewController.swift */,
-				53095B6C295F20FA0092FDFA /* Main.storyboard */,
+				53DE599B295F525100DE0B6A /* Map */,
 				53095B6F295F21020092FDFA /* Assets.xcassets */,
 				53095B71295F21020092FDFA /* LaunchScreen.storyboard */,
 				53095B74295F21020092FDFA /* Info.plist */,
 			);
 			path = "Geo Pinner";
+			sourceTree = "<group>";
+		};
+		53DE599B295F525100DE0B6A /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				53DE598D295F523F00DE0B6A /* MapPresenter.swift */,
+				53DE598E295F523F00DE0B6A /* MapLocalDataManager.swift */,
+				53DE598F295F523F00DE0B6A /* MapProtocols.swift */,
+				53DE5990295F523F00DE0B6A /* MapInteractor.swift */,
+				53DE5991295F523F00DE0B6A /* MapView.swift */,
+				53DE5992295F523F00DE0B6A /* MapRemoteDataManager.swift */,
+				53DE5993295F523F00DE0B6A /* MapWireFrame.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +150,6 @@
 			files = (
 				53095B73295F21020092FDFA /* LaunchScreen.storyboard in Resources */,
 				53095B70295F21020092FDFA /* Assets.xcassets in Resources */,
-				53095B6E295F20FA0092FDFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +160,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53095B6B295F20FA0092FDFA /* ViewController.swift in Sources */,
+				53DE5998295F523F00DE0B6A /* MapView.swift in Sources */,
 				53095B67295F20FA0092FDFA /* AppDelegate.swift in Sources */,
 				53095B69295F20FA0092FDFA /* SceneDelegate.swift in Sources */,
+				53DE5996295F523F00DE0B6A /* MapProtocols.swift in Sources */,
+				53DE5999295F523F00DE0B6A /* MapRemoteDataManager.swift in Sources */,
+				53DE599A295F523F00DE0B6A /* MapWireFrame.swift in Sources */,
+				53DE5997295F523F00DE0B6A /* MapInteractor.swift in Sources */,
+				53DE5995295F523F00DE0B6A /* MapLocalDataManager.swift in Sources */,
+				53DE5994295F523F00DE0B6A /* MapPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		53095B6C295F20FA0092FDFA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53095B6D295F20FA0092FDFA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		53095B71295F21020092FDFA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +312,6 @@
 				INFOPLIST_FILE = "Geo Pinner/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,9 +321,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.GabrielCastilloSerafim.Geo-Pinner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +342,6 @@
 				INFOPLIST_FILE = "Geo Pinner/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,9 +351,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.GabrielCastilloSerafim.Geo-Pinner";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
