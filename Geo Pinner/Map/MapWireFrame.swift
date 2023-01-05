@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 class MapWireFrame: MapWireFrameProtocol {
     
@@ -35,6 +36,17 @@ class MapWireFrame: MapWireFrameProtocol {
         return navController
     }
     
-    
+    func goToCreateAnnotationView(fromVC: MapView, annotation: MKAnnotation, delegate: CreateAnnotationDelegate) {
+        
+        let createAnnotationView = CreateAnnotationWireFrame.createCreateAnnotationModule(annotation: annotation, delegate: delegate)
+        
+        if let sheet = createAnnotationView.sheetPresentationController {
+            sheet.detents = [.medium(), .large()]
+            sheet.prefersGrabberVisible = true
+            sheet.preferredCornerRadius = 25
+        }
+        
+        fromVC.present(createAnnotationView, animated: true)
+    }
     
 }

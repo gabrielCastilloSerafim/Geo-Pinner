@@ -1,0 +1,14 @@
+//
+//  CreateAnnotationLocalDataManager.swift
+//  Geo Pinner
+//
+//  Created by Gabriel Castillo Serafim on 4/1/23.
+//  
+//
+
+import Foundation
+
+class CreateAnnotationLocalDataManager:CreateAnnotationLocalDataManagerInputProtocol {
+    
+    
+}

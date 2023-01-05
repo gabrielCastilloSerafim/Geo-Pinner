@@ -18,6 +18,15 @@
 		53DE5998295F523F00DE0B6A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE5991295F523F00DE0B6A /* MapView.swift */; };
 		53DE5999295F523F00DE0B6A /* MapRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE5992295F523F00DE0B6A /* MapRemoteDataManager.swift */; };
 		53DE599A295F523F00DE0B6A /* MapWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53DE5993295F523F00DE0B6A /* MapWireFrame.swift */; };
+		53FA20692965A66900BBCD4C /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA20682965A66900BBCD4C /* AnnotationView.swift */; };
+		53FA207229660BE100BBCD4C /* CreateAnnotationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA206B29660BE100BBCD4C /* CreateAnnotationPresenter.swift */; };
+		53FA207329660BE100BBCD4C /* CreateAnnotationLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA206C29660BE100BBCD4C /* CreateAnnotationLocalDataManager.swift */; };
+		53FA207429660BE100BBCD4C /* CreateAnnotationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA206D29660BE100BBCD4C /* CreateAnnotationProtocols.swift */; };
+		53FA207529660BE100BBCD4C /* CreateAnnotationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA206E29660BE100BBCD4C /* CreateAnnotationInteractor.swift */; };
+		53FA207629660BE100BBCD4C /* CreateAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA206F29660BE100BBCD4C /* CreateAnnotationView.swift */; };
+		53FA207729660BE100BBCD4C /* CreateAnnotationRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA207029660BE100BBCD4C /* CreateAnnotationRemoteDataManager.swift */; };
+		53FA207829660BE100BBCD4C /* CreateAnnotationWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA207129660BE100BBCD4C /* CreateAnnotationWireFrame.swift */; };
+		53FA207A2966357F00BBCD4C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA20792966357F00BBCD4C /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +43,15 @@
 		53DE5991295F523F00DE0B6A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		53DE5992295F523F00DE0B6A /* MapRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRemoteDataManager.swift; sourceTree = "<group>"; };
 		53DE5993295F523F00DE0B6A /* MapWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWireFrame.swift; sourceTree = "<group>"; };
+		53FA20682965A66900BBCD4C /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		53FA206B29660BE100BBCD4C /* CreateAnnotationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnotationPresenter.swift; sourceTree = "<group>"; };
+		53FA206C29660BE100BBCD4C /* CreateAnnotationLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnotationLocalDataManager.swift; sourceTree = "<group>"; };
+		53FA206D29660BE100BBCD4C /* CreateAnnotationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnotationProtocols.swift; sourceTree = "<group>"; };
+		53FA206E29660BE100BBCD4C /* CreateAnnotationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnotationInteractor.swift; sourceTree = "<group>"; };
+		53FA206F29660BE100BBCD4C /* CreateAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnotationView.swift; sourceTree = "<group>"; };
+		53FA207029660BE100BBCD4C /* CreateAnnotationRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnotationRemoteDataManager.swift; sourceTree = "<group>"; };
+		53FA207129660BE100BBCD4C /* CreateAnnotationWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAnnotationWireFrame.swift; sourceTree = "<group>"; };
+		53FA20792966357F00BBCD4C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +86,9 @@
 			children = (
 				53095B66295F20FA0092FDFA /* AppDelegate.swift */,
 				53095B68295F20FA0092FDFA /* SceneDelegate.swift */,
+				53FA20792966357F00BBCD4C /* Extensions.swift */,
 				53DE599B295F525100DE0B6A /* Map */,
+				53FA206A29660BA800BBCD4C /* CreateAnnotation */,
 				53095B6F295F21020092FDFA /* Assets.xcassets */,
 				53095B71295F21020092FDFA /* LaunchScreen.storyboard */,
 				53095B74295F21020092FDFA /* Info.plist */,
@@ -86,8 +106,23 @@
 				53DE5991295F523F00DE0B6A /* MapView.swift */,
 				53DE5992295F523F00DE0B6A /* MapRemoteDataManager.swift */,
 				53DE5993295F523F00DE0B6A /* MapWireFrame.swift */,
+				53FA20682965A66900BBCD4C /* AnnotationView.swift */,
 			);
 			path = Map;
+			sourceTree = "<group>";
+		};
+		53FA206A29660BA800BBCD4C /* CreateAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				53FA206B29660BE100BBCD4C /* CreateAnnotationPresenter.swift */,
+				53FA206C29660BE100BBCD4C /* CreateAnnotationLocalDataManager.swift */,
+				53FA206D29660BE100BBCD4C /* CreateAnnotationProtocols.swift */,
+				53FA206E29660BE100BBCD4C /* CreateAnnotationInteractor.swift */,
+				53FA206F29660BE100BBCD4C /* CreateAnnotationView.swift */,
+				53FA207029660BE100BBCD4C /* CreateAnnotationRemoteDataManager.swift */,
+				53FA207129660BE100BBCD4C /* CreateAnnotationWireFrame.swift */,
+			);
+			path = CreateAnnotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,12 +196,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				53DE5998295F523F00DE0B6A /* MapView.swift in Sources */,
+				53FA207A2966357F00BBCD4C /* Extensions.swift in Sources */,
 				53095B67295F20FA0092FDFA /* AppDelegate.swift in Sources */,
+				53FA207729660BE100BBCD4C /* CreateAnnotationRemoteDataManager.swift in Sources */,
+				53FA207829660BE100BBCD4C /* CreateAnnotationWireFrame.swift in Sources */,
 				53095B69295F20FA0092FDFA /* SceneDelegate.swift in Sources */,
 				53DE5996295F523F00DE0B6A /* MapProtocols.swift in Sources */,
 				53DE5999295F523F00DE0B6A /* MapRemoteDataManager.swift in Sources */,
+				53FA207229660BE100BBCD4C /* CreateAnnotationPresenter.swift in Sources */,
 				53DE599A295F523F00DE0B6A /* MapWireFrame.swift in Sources */,
 				53DE5997295F523F00DE0B6A /* MapInteractor.swift in Sources */,
+				53FA207629660BE100BBCD4C /* CreateAnnotationView.swift in Sources */,
+				53FA207529660BE100BBCD4C /* CreateAnnotationInteractor.swift in Sources */,
+				53FA207429660BE100BBCD4C /* CreateAnnotationProtocols.swift in Sources */,
+				53FA207329660BE100BBCD4C /* CreateAnnotationLocalDataManager.swift in Sources */,
+				53FA20692965A66900BBCD4C /* AnnotationView.swift in Sources */,
 				53DE5995295F523F00DE0B6A /* MapLocalDataManager.swift in Sources */,
 				53DE5994295F523F00DE0B6A /* MapPresenter.swift in Sources */,
 			);
